@@ -1,0 +1,163 @@
+* {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  min-height: 100vh;
+}
+
+#wrapper {
+  width: 425px;
+  padding: 1.75rem 2rem 0 1.75rem;
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 25px;
+}
+
+/* How do we do section CSS */
+#before-section {
+  margin-bottom: 1.75rem;
+}
+
+#img-div {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-div {
+  margin: 1.75rem 0 1.25rem 0;
+}
+
+#info-div h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+#info-div p {
+  color: hsl(217, 12%, 63%);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#btns-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btns-div .btn {
+  appearance: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#btns-div .btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
+
+#btns-div .btn:focus,
+.active {
+  background-color: white;
+  color: hsl(216, 12%, 8%);
+}
+
+#submit-btn {
+  width: 100%;
+  appearance: none;
+  border: none;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  color: hsl(216, 12%, 8%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: hsl(25, 97%, 53%);
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+}
+
+#submit-btn:focus {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Thank you section CSS */
+#after-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#after-section img {
+  margin: 1.25rem 0 1.5rem 0;
+}
+
+#rating-div {
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(25, 97%, 53%);
+  border-radius: 2rem;
+}
+
+#msg-div {
+  margin: 2.25rem 0 2.5rem 0;
+}
+
+#msg-div h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+#msg-div p {
+  font-size: 15px;
+  padding: 0 12px;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+
+  #wrapper {
+    width: 350px;
+  }
+  #msg-div p {
+    padding: 0;
+  }
+}
